@@ -1,0 +1,27 @@
+1.
+a). prinsip single responbility adalah prinsip pengembangan perangkat lunak yang memastikan bahwa setiap class hanya memiliki satu tugas utama saja.
+- keuntungan:karena single responbility menggunakan prinsip satu untuk satu sehingga program yang di hasilkan akan lebih mudah di pahami dan di pelihara.
+b). prinsip open/closed adalah sebuah class yang harus bisa di-extend, tapi harus juga tertutup untuk modifikasi. Prinsip ini memaksa kita untuk dapat merancang sebuah entitas, misalnya class, yang dapat dimodifikasi perilakunya tanpa harus mengubah-ubah source code-nya yang sudah ditetapkan sebelumnya.
+    Maksudnya, sebuah entitas baiknya itu bersifat terbuka untuk diperluas, sehingga sebuah perilaku dapat diubah dengan cara menambahkan kode program baru.
+- keuntungan : Membuat code yang kita buat menjadi bisa digunakan berkali-kali
+	       Mempermudah pemeliharaan code yang sudah ada. 
+	       Lebih mudah karena tidak perlu dipelihara, karena tidak diubah-ubah!
+
+2. https://github.com/Abyan-haidar/prplpertemuan10
+
+3. 
+a). Interface merupakan sebuah class yang tidak memiliki tubuh pada method-methodnya. Method interface harus diimplementasikan dalam kelas turunannya. Di dalam interface, deklarasi variable memiliki atribut final. 
+    Karena hal itu, Interface akan membuat si objek bisa menggunakan objek apapun, dengan syarat objek tersebut harus mengimplementasikan method dari interface. Tapi ketika kita memiliki class atau metode yang ingin kita perluas tanpa memodifikasinya, maka kita harus memisahkan perilaku yang dapat diperluas dibelakang interface dan mengembalikannya ke kelas yang mengimplementasikan interface. 
+
+- cara Memanggil tiap class-class tersebut:
+
+$jenis = 'credit';
+
+$paymentFactory = new PaymentFactory();
+
+$payment = $paymentFactory->initializePayment($jenis);
+print_r($payment->pay());
+
+b.) https://github.com/Abyan-haidar/prplpertemuan12
+
+4. http://proyek-laravel-1900018218.herokuapp.com/public/
